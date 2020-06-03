@@ -19,7 +19,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexandermckay/getkeyvalue.git"
+    "url": "git+https://github.com/alexandermckay/get-key-value.git"
   },
   "bugs": {
     "url": "https://github.com/alexandermckay/getkeyvalue/issues"
@@ -28,9 +28,7 @@
   "devDependencies": {
     "@types/jest": "^25.2.3",
     "jest": "^26.0.1",
-    "typescript": "^3.9.3"
-  },
-  "dependencies": {
+    "typescript": "^3.9.3",
     "ts-jest": "^26.1.0"
   }
 }
