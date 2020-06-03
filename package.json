@@ -1,0 +1,16 @@
+{
+  "name": "get-key-value",
+  "version": "1.0.0",
+  "description": "Avoid \"Element implicitly has an 'any' type because expression of type 'string' can't be used to index\" errors",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "typescript",
+    "index",
+    "objects"
+  ],
+  "author": "Alex McKay",
+  "license": "ISC"
+}
