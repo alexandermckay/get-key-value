@@ -2,8 +2,8 @@
 
 ## Installation
 
-`npm install @alexandermckay/get-key-value`
-`yarn add @alexandermckay/get-key-value`
+`npm install get-key-value`
+`yarn add get-key-value`
 
 ## Purpose
 
