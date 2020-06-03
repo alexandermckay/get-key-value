@@ -1,10 +1,14 @@
 {
   "name": "get-key-value",
   "version": "1.0.0",
+  "files": [
+    "lib/**/*"
+  ],
   "description": "Avoid \"Element implicitly has an 'any' type because expression of type 'string' can't be used to index\" errors",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
   "keywords": [
     "typescript",
@@ -20,5 +24,13 @@
   "bugs": {
     "url": "https://github.com/alexandermckay/getkeyvalue/issues"
   },
-  "homepage": "https://github.com/alexandermckay/getkeyvalue#readme"
+  "homepage": "https://github.com/alexandermckay/getkeyvalue#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "jest": "^26.0.1",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "ts-jest": "^26.1.0"
+  }
 }
