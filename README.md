@@ -3,6 +3,7 @@
 ## Installation
 
 `npm install get-key-value`
+
 `yarn add get-key-value`
 
 ## Purpose
@@ -16,13 +17,17 @@ This tiny package makes it easy to deal with this error.
 ```typescript
 const user = {name: 'Bill'}
 
-const getKeyValueA = (key: string, obj: object) => obj[key];
+const getKeyValueA = (key: string, obj: object) => obj[key]
 getKeyValueA('name', user) // Won't work
 
-const getKeyValueB = (key: string, obj: Record<string, any>) => obj[key]
+const getKeyValueB = (key: string, obj: Record<string, any>) =>
+  obj[key]
 getKeyValue('name', user) // Will work but at the loss of type safety
 
-const getKeyValue = <U extends keyof T, T extends object>(key: U, obj: T) => obj[key];
+const getKeyValue = <U extends keyof T, T extends object>(
+  key: U,
+  obj: T
+) => obj[key]
 getKeyValue<keyof typeof user, typeof user>('name', user) // Will work with type safety
 ```
 
@@ -30,7 +35,7 @@ getKeyValue<keyof typeof user, typeof user>('name', user) // Will work with type
 
 - We set the `key` parameter to be type `string`
 - We set the `obj` parameter to be type `object`
-- The `object` type defaults to an empty object `{}` 
+- The `object` type defaults to an empty object `{}`
 - The are no string in an empty object, therefore a string cannot be used to retrieve a value
 
 ### getKeyValueB
@@ -40,7 +45,11 @@ getKeyValue<keyof typeof user, typeof user>('name', user) // Will work with type
 
 ```typescript
 // Valid Record<string, any>
-const user = {name: 'Bill', age: 20, likes: ['turtles', 'rock climbing']}
+const user = {
+  name: 'Bill',
+  age: 20,
+  likes: ['turtles', 'rock climbing'],
+}
 // Invalid Record<string, any>
 const user = {1: 'Bill', 2: 20, 3: ['turtles', 'rock climbing']}
 ```
@@ -62,8 +71,11 @@ There are two ways to use the `getKeyValue` function:
 Use this option if you have a interface defined for your object
 
 ```typescript
-interface User { name: string; age: number; }
-const user: User = { name: "John Smith", age: 20 };
+interface User {
+  name: string
+  age: number
+}
+const user: User = {name: 'John Smith', age: 20}
 getKeyValue<keyof User, User>('name', user) // => 'John Smith'
 ```
 
@@ -72,6 +84,6 @@ getKeyValue<keyof User, User>('name', user) // => 'John Smith'
 Use this option if you don't have an interface defined for your object
 
 ```typescript
-const user = { name: "John Smith", age: 20 };
+const user = {name: 'John Smith', age: 20}
 getKeyValue<keyof typeof user, user>('name', user) // => 'John Smith'
 ```
