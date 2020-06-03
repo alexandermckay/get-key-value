@@ -1,5 +1,5 @@
 {
-  "name": "get-key-value",
+  "name": "@alexandermckay/get-key-value",
   "version": "1.0.0",
   "description": "Avoid \"Element implicitly has an 'any' type because expression of type 'string' can't be used to index\" errors",
   "main": "index.js",
@@ -12,5 +12,13 @@
     "objects"
   ],
   "author": "Alex McKay",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandermckay/getkeyvalue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexandermckay/getkeyvalue/issues"
+  },
+  "homepage": "https://github.com/alexandermckay/getkeyvalue#readme"
 }
