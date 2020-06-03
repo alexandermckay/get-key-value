@@ -1,5 +1,5 @@
 {
-  "name": "@alexandermckay/get-key-value",
+  "name": "get-key-value",
   "version": "1.0.0",
   "description": "Avoid \"Element implicitly has an 'any' type because expression of type 'string' can't be used to index\" errors",
   "main": "index.js",
