@@ -1,5 +1,9 @@
 # Get Key Value
 
+## NPM
+
+https://www.npmjs.com/package/get-key-value
+
 ## Installation
 
 `npm install get-key-value`
