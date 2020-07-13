@@ -93,5 +93,5 @@ Use this option if you don't have an interface defined for your object
 
 ```typescript
 const user = {name: 'John Smith', age: 20}
-getKeyValue<keyof typeof user, user>('name', user) // => 'John Smith'
+getKeyValue<keyof typeof user, typeof user>('name', user) // => 'John Smith'
 ```
