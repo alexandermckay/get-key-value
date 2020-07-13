@@ -1,5 +1,9 @@
 # Get Key Value
 
+## Size
+
+`~ 38 bytes` once minified
+
 ## NPM
 
 https://www.npmjs.com/package/get-key-value
