@@ -2,7 +2,7 @@
 
 ## Size
 
-`~ 38 bytes` once minified
+~ 38 bytes once minified
 
 ## NPM
 
